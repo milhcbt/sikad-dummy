@@ -1,0 +1,42 @@
+#hanya untuk applikasi, setiap bundle di set dimasing-masing bundle..
+api:
+    resource: '.'
+    type: 'api_platform'
+
+#AuthBundle routing 
+#auth:
+#    resource: '@AuthBundle/Resources/config/routing.xml'
+
+#PartyBundle routing 
+#party:
+#    resource: '@PartyBundle/Resources/config/routing.xml'
+
+# auth_user:
+#     resource: "@AuthBundle/Controller/UserController.php"
+#     type:     annotation
+
+
+# app:
+#     resource: '@AuthBundle/Action/'
+#     type:     'annotation'
+
+# auth:
+#    resource: "@AuthBundle/Resources/config/routing.xml"
+#    prefix:   /
+
+#  AuthBundle:
+#       resource: "@AuthBundle/Resources/config/routing.yml"
+#       prefix:   /
+
+
+#   acme_blog:
+#       resource: "@AcmeBlogBundle/Resources/config/routing.yml"
+#       host:   "subdomain.example.in"
+#       prefix:   /   
+
+# user_login:
+#     path: '/User/login'
+#     methods:  ['POST']
+#     defaults:
+#         _controller: 'AppBundle:Login:credential'
+#         _api_item_operation_name: 'credential'

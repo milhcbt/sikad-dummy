@@ -1,0 +1,22 @@
+default:
+  calls:
+    error_reporting: 16383 # E_ALL & ~E_USER_DREPRECATED
+  suites:
+    party:
+        type: symfony_bundle
+        bundle: PartyBundle
+        contexts:
+          - Suteki\Siakad\PartyBundle\Features\Context\ManageUserContext:  { doctrine: "@doctrine" }
+  formatters:
+    pretty: true
+  extensions:
+    Behat\Symfony2Extension:
+      kernel:
+        env: "test"
+        debug: "true"
+    Behat\MinkExtension:
+      base_url: "http://localhost:8000/"
+      sessions:
+        default:
+          symfony2: ~
+    Behatch\Extension: ~
